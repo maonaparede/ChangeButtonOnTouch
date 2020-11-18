@@ -4,6 +4,10 @@ the button changes
 
 ## This lib was created to make custom buttons quickly;
 
+With this lib, when the button is press, it change the text color and the button background / color.
+
+###XML Example
+
 
        <com.example.onbutton.OnButton
         android:id="@+id/button2"
@@ -30,3 +34,12 @@ Use the tag "**android:textColor**" to set the text color when the button is not
 ## Download
 
 [Download](https://github.com/maonaparede/ChangeButtonOnTouch_0.1/releases/tag/v0.1) the .aar file and import in your project
+
+And add in your "**build.gradle(:app)**"
+
+    dependencies{
+
+      implementation project(path: ':onbutton_0.1');
+
+    }
+
