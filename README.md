@@ -1,6 +1,6 @@
 # Welcome to the ChangeButtonOnTouch-Lib wiki!
 
-## This lib was created to make custom buttons quickly;
+## This lib was created to make custom buttons quickly; (Not working now)
 
 With this lib, when the button is press, it change the text color and the button background / color.
 
