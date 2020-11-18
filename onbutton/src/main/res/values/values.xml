@@ -4,5 +4,6 @@
         <attr name="onTouch_text_color" format="color"/>
         <attr name="onTouch_background" format="reference"/>
         <attr name="android:text"/>
+        <attr name="android:onClick"/>
     </declare-styleable>
 </resources>

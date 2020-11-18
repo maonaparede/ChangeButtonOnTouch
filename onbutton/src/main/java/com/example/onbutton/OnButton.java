@@ -11,6 +11,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,7 @@ public class OnButton extends androidx.appcompat.widget.AppCompatButton implemen
 
 
     /** Core Items*/
+    public OnClickListener listener;
     private Context mContext;
     private AttributeSet attrs;
     private int styleAttr;
@@ -30,7 +32,7 @@ public class OnButton extends androidx.appcompat.widget.AppCompatButton implemen
     private Drawable defaultBackground;
     private CharSequence text = "Button";
     private int newTextColor;
-    private int defaultTextColor;
+    private int defaultTextColor = 888;
 
 
     public OnButton(@NonNull Context context) {
@@ -71,15 +73,17 @@ public class OnButton extends androidx.appcompat.widget.AppCompatButton implemen
         defaultBackground = button.getBackground();
         defaultTextColor = button.getCurrentTextColor();
 
+
         newBackground = arr.getDrawable(R.styleable.OnButton_onTouch_background);
         newTextColor = arr.getColor( R.styleable.OnButton_onTouch_text_color , defaultTextColor);
         text = arr.getText(R.styleable.OnButton_android_text);
 
+        button.setText(text);
 
 
 
 
-        if (newBackground != null) {
+        if (newBackground != null || newTextColor != 888) {
             button.setOnTouchListener(this);
         }
     }
@@ -87,15 +91,20 @@ public class OnButton extends androidx.appcompat.widget.AppCompatButton implemen
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            v.setBackground(newBackground);
-            button.setTextColor(newTextColor);
-            return true;
+
+            if (newBackground != null ) {
+                v.setBackground(newBackground);
+            }
+            if (newTextColor != 888) {
+                button.setTextColor(newTextColor);
+            }
+
         } else if (event.getAction() == MotionEvent.ACTION_UP) {
             v.setBackground(defaultBackground);
             button.setTextColor(defaultTextColor);
         }
+
         return false;
     }
 }
