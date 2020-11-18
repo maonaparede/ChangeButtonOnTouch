@@ -11,8 +11,8 @@ With this lib, when the button is press, it change the text color and the button
         android:layout_width="300dp"
         android:layout_height="75dp"
         
-         android:background="@drawable/bg_button_rounded"
-         app:onTouch_background="@drawable/bg_button_rounded2"
+         android:background="#777"
+         app:onTouch_background="#12F"
         
          android:textColor="#FFF"
          app:onTouch_text_color="#854"
