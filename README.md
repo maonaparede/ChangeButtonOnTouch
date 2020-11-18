@@ -1,13 +1,10 @@
-# ChangeButtonOnTouch_0.1
-the button changes
-
+# Welcome to the ChangeButtonOnTouch-Lib wiki!
 
 ## This lib was created to make custom buttons quickly;
 
 With this lib, when the button is press, it change the text color and the button background / color.
 
-###XML Example
-
+### XML Example
 
        <com.example.onbutton.OnButton
         android:id="@+id/button2"
@@ -22,6 +19,8 @@ With this lib, when the button is press, it change the text color and the button
         
         android:text="Button"
         /> 
+
+
 
 The "**app:onTouch_background**" tag change the button background when press.
 Use the tag "**android:background**" to set the background when the button is not press.
@@ -42,4 +41,3 @@ And add in your "**build.gradle(:app)**"
       implementation project(path: ':onbutton_0.1');
 
     }
-
