@@ -1,6 +1,6 @@
 # Welcome to the ChangeButtonOnTouch-Lib wiki!
 
-## This lib was created to make custom buttons quickly
+## This lib was created to make custom buttons quickly;
 
 With this lib, when the button is press, it change the text color and the button background / color.
 
@@ -32,7 +32,7 @@ Use the tag "**android:textColor**" to set the text color when the button is not
 
 ## Download
 
-[Download](https://github.com/maonaparede/ChangeButtonOnTouch_0.1/releases/tag/v0.1) the .aar file and import in your project()
+[Download](https://github.com/maonaparede/ChangeButtonOnTouch_0.1/releases/tag/v0.2) the .aar file and import in your project(**File>New>New Module>import .JAR / .AAR Package**) and select the .AAR File.
 
 And add in your "**build.gradle(:app)**"
 
@@ -41,3 +41,6 @@ And add in your "**build.gradle(:app)**"
       implementation project(path: ':onbutton_0.2');
 
     }
+
+
+### All Ready - Carpe Diem
